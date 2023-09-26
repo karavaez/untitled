@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Привет! Это калькулятор!");
         Scanner in = new Scanner(System.in);
-        System.out.print("Input number1:");
+        System.out.print("Введи первое число:");
         int num1 = in.nextInt();
-        System.out.print("Input number2:");
+        System.out.print("Введи второе число:");
         int num2 = in.nextInt();
-        System.out.print("Choose an action: \n 1 = + \n 2 = - \n 3 = * \n 4 = / \n");
+        System.out.print("Введи цифру соответствующую действию: \n 1 = + \n 2 = - \n 3 = * \n 4 = / \n");
         int num3 = in.nextInt();
         switch (num3){
             case 1:
@@ -23,6 +24,9 @@ public class Main {
                 break;
             case 4:
                 System.out.printf("/ = %.2f", (double) num1/num2);
+                break;
+            default:
+                System.out.println("Введенная цифра не соответствует заданным  1,2,3,4");
         }
 
 
